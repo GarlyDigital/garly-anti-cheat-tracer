@@ -1,0 +1,6 @@
+node_modules/
+data/eac/
+data/vanguard/
+data/tracer-state.json
+*.7z
+.env

@@ -1,0 +1,16 @@
+{
+  "name": "garlybot",
+  "type": "commonjs",
+  "version": "0.1.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.14.1"
+  },
+  "keywords": [],
+  "author": "garly0",
+  "license": "ISC",
+  "description": ""
+}

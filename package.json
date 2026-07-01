@@ -9,8 +9,12 @@
   "dependencies": {
     "discord.js": "^14.14.1"
   },
-  "keywords": [],
+  "keywords": [
+    "discord-bot",
+    "discordjs",
+    "vanguard"
+  ],
   "author": "garly0",
   "license": "ISC",
-  "description": ""
+  "description": "Vanguard ve EAC izleme botu (gelistirme asamasinda)"
 }

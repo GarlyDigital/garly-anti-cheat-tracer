@@ -43,7 +43,15 @@ const client = new Client({
 client.once(Events.ClientReady, async (readyClient) => {
   console.log(`[BOT] ${readyClient.user.tag} olarak giris yapildi.`);
 
-    // Slash kaydi henuz eklenmedi
+  if (commands.length > 0) {
+    const rest = new REST({ version: "10" }).setToken(token);
+    try {
+      await rest.put(Routes.applicationCommands(readyClient.user.id), { body: commands });
+      console.log(`[SLASH] Aktif komutlar: ${commands.map((c) => `/${c.name}`).join(", ")}`);
+    } catch (error) {
+      console.error("[SLASH] Komut kaydi basarisiz.", error);
+    }
+  }
 });
 
 client.on(Events.InteractionCreate, async (interaction) => {
